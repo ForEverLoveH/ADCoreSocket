@@ -75,10 +75,10 @@ namespace ADCoreClient.ADCoreClientWindow
 
         public  void ClearAllData()
         {
-            TelPhoneInput.Text = String.Empty;
-            PasswordAginstInput.Text  = String.Empty;
-            passwordinput.Text = string.Empty;
-            AcccountText.Text = String.Empty;
+            TelPhoneInput.Text = null;
+            PasswordAginstInput.Text = null;
+            passwordinput.Text = null;
+            AcccountText.Text = null;
         }
 
         public  void SetWindowState()

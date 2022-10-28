@@ -167,7 +167,7 @@ namespace ADCore.ADCoreServer
                     Phone = req_Register.phoneNum,
                 };
                 RegisterSql.Instance.IsExtenceAdminData(GameConst.DBLoginName);
-                  bool  l=   RegisterSql.Instance.RegisterUser(admin, GameConst.DBLoginName);
+                bool  l=   RegisterSql.Instance.RegisterUser(admin, GameConst.DBLoginName);
                  serverData.serverDataMsg = new ServerDataMsg()
                  {
                      registerData = new RegisterData()

@@ -8,8 +8,6 @@
 
     }
 
-
-
     public class RegisterData
     {
         public  bool IsRegister { get; set; }

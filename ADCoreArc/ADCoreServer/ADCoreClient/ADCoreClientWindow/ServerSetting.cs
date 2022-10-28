@@ -42,6 +42,7 @@ namespace ADCoreClient
                 {
                     Socket_TCP.Connect(point);//连接服务器
                     ShowMsg( RecieveMsgText,"连接成功");
+                    ConnectBtn.Text = "关闭";
                     IsConnect = true;
                 }
                 catch (Exception ex)
@@ -71,7 +72,7 @@ namespace ADCoreClient
                 }
                 catch(Exception ex)
                 {
-
+                    Console.WriteLine("断开异常" + ex.Message);
                 }
 
              }
@@ -116,7 +117,7 @@ namespace ADCoreClient
                 }
                 catch (Exception ex)
                 {
-
+                    Console.WriteLine("接收信息异常！！" + ex.Message);
                 }
             }
         }

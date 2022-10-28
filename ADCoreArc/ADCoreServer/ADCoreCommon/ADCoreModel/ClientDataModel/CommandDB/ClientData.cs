@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADCore.ADCoreCommon { 
+namespace ADCore.ADCoreCommon 
+{ 
+    // 客户端发给服务器端的数据模型 
     public  class ClientData
     {
         /// <summary>

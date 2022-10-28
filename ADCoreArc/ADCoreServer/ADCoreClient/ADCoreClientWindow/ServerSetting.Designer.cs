@@ -68,7 +68,7 @@
             // uiLabel2
             // 
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(399, 17);
+            this.uiLabel2.Location = new System.Drawing.Point(377, 23);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(88, 23);
             this.uiLabel2.TabIndex = 2;
@@ -80,12 +80,12 @@
             // 
             this.PortInput.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PortInput.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.PortInput.Location = new System.Drawing.Point(512, 17);
+            this.PortInput.Location = new System.Drawing.Point(427, 17);
             this.PortInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PortInput.MinimumSize = new System.Drawing.Size(1, 16);
             this.PortInput.Name = "PortInput";
             this.PortInput.ShowText = false;
-            this.PortInput.Size = new System.Drawing.Size(329, 29);
+            this.PortInput.Size = new System.Drawing.Size(117, 29);
             this.PortInput.TabIndex = 3;
             this.PortInput.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.PortInput.Watermark = "";
@@ -95,7 +95,7 @@
             // 
             this.ConnectBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ConnectBtn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ConnectBtn.Location = new System.Drawing.Point(864, 12);
+            this.ConnectBtn.Location = new System.Drawing.Point(560, 12);
             this.ConnectBtn.MinimumSize = new System.Drawing.Size(1, 1);
             this.ConnectBtn.Name = "ConnectBtn";
             this.ConnectBtn.Size = new System.Drawing.Size(100, 35);

@@ -26,7 +26,6 @@ namespace ADCore. ADCoreServer.MessageManager
             }
             Updata();
         }
-
         private void Updata()
         {
             while (dataMessage.Count > 0)
@@ -38,7 +37,6 @@ namespace ADCore. ADCoreServer.MessageManager
                 }
             }
         }
-
         private void HandelMsg(ClientData msg)
         {
             switch (msg.dataType)
