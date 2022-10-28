@@ -13,8 +13,8 @@ namespace ADCoreClient.ADCoreClientSys
     {
         public static LoginSys Instance;
         public  LoginWindow LoginWindow;
-        RegisterSys RegisterSys = new RegisterSys();
-        ServerSettingSys ServerSettingSys= new ServerSettingSys();   
+        RegisterSys RegisterSys = null ;
+        ServerSettingSys ServerSettingSys =null;   
 
 
         public  void Awake()
@@ -29,6 +29,7 @@ namespace ADCoreClient.ADCoreClientSys
 
         public  void GoToRegister()
         {
+            RegisterSys = new RegisterSys();
             RegisterSys.Init();
         }
 
@@ -71,6 +72,7 @@ namespace ADCoreClient.ADCoreClientSys
             }
             else
             {
+                ServerSettingSys = new ServerSettingSys();
                if(ServerSettingSys.IsCheckConnect())
                {
                     ClientData clientData = new ClientData()
@@ -125,6 +127,7 @@ namespace ADCoreClient.ADCoreClientSys
 
         public  void ToServerSetting()
         {
+            ServerSettingSys = new ServerSettingSys();
              ServerSettingSys.Init();
         }
     }

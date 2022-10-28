@@ -13,7 +13,8 @@ namespace ADCoreClient.ADCoreClientSys
     {
         public static RegisterSys Instance;
         public static RegisterWindow RegisterWindow;
-        ServerSettingSys ServerSettingSys = new ServerSettingSys();
+        ServerSettingSys ServerSettingSys ;
+        LoginSys LoginSys = new LoginSys();
 
         public  void Awake()
         {
@@ -64,6 +65,7 @@ namespace ADCoreClient.ADCoreClientSys
             }
             else
             {
+                ServerSettingSys = new ServerSettingSys();
                 if (ServerSettingSys.IsCheckConnect())
                 {
                     ClientData clientData = new ClientData()
@@ -93,8 +95,13 @@ namespace ADCoreClient.ADCoreClientSys
         {
             if (serverData.serverDataMsg.registerData.IsRegister)
             {
-                MessageBox.Show("注册成功");
-                RegisterWindow.ClearAllData();
+                DialogResult dialogResult = MessageBox.Show("注册成功，是否前往登录?", "恭喜您！！", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (dialogResult == DialogResult.OK || dialogResult == DialogResult.Yes) 
+                {
+                    RegisterWindow.ClearAllData();
+                    RegisterWindow.SetWindowState();
+                    LoginSys.Init();
+                }
                 RegisterWindow.SetWindowState();
             }
             else

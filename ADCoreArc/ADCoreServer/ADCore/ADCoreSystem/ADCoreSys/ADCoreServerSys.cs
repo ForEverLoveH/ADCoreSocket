@@ -35,12 +35,14 @@ namespace ADCore.ADCoreSystem.ADCoreSys
                 if (ADCoreServerWindow == null)
                 {
                     Application.Run(ADCoreServerWindow = new ADCoreServerWindow());
+                    ADCoreServerWindow.Show();
                 }
                 else
                 {
                     if (ADCoreServerWindow.IsDisposed)
                     {
                         Application.Run(ADCoreServerWindow = new ADCoreServerWindow());
+                        ADCoreServerWindow.Show();
                     }
                     else
                     {

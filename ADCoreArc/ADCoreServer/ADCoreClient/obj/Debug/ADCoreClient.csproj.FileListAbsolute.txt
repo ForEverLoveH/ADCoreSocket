@@ -42,3 +42,4 @@ D:\WorkProject\ADCoreServer\ADCoreSocket\ADCoreArc\ADCoreServer\ADCoreClient\obj
 D:\WorkProject\ADCoreServer\ADCoreSocket\ADCoreArc\ADCoreServer\ADCoreClient\obj\Debug\ADCoreClient.csproj.CopyComplete
 D:\WorkProject\ADCoreServer\ADCoreSocket\ADCoreArc\ADCoreServer\ADCoreClient\obj\Debug\ADCoreClient.exe
 D:\WorkProject\ADCoreServer\ADCoreSocket\ADCoreArc\ADCoreServer\ADCoreClient\obj\Debug\ADCoreClient.pdb
+D:\WorkProject\ADCoreServer\ADCoreSocket\ADCoreArc\ADCoreServer\ADCoreClient\obj\Debug\ADCoreClient.ADCoreClientWindow.MainWindow.resources
